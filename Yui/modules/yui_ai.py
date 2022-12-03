@@ -5,7 +5,7 @@ import re
 from pyrogram import Client as yuiai, filters, enums
 from pyrogram.types import Message
 from Yui.data.defaults import Defaults
-from .yui_base import Yui_Base
+
 from config import Config
 
 
@@ -18,7 +18,7 @@ yui_bot_id = int(Config.BOT_TOKEN.split(":")[0])
 async def talk_with_yui(_, message: Message):
     c_type = message.chat.type
     r_msg = message.reply_to_message
-    yui_base = Yui_Base()
+
     # For Private chats
     if c_type == enums.ChatType.PRIVATE:
         quiz_text = message.text
