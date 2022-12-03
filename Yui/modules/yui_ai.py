@@ -121,17 +121,6 @@ async def help_yui(_, message: Message):
     - This is a chat bot tho. Why you need to ban someone? If it's necessary use "banable" branch and send `/ban` command (Only for Heroku Users)
 
 
-**Made with ❤️ by @NexaBotsUpdates**
+**Made with ❤️ by @yeftaza**
 """
     await message.reply(help_msg, reply_to_message_id=message.id)
-
-
-# Restart Heroku App
-@yuiai.on_message(filters.command("restart"))
-async def restart_yui(_, message: Message):
-    if Config.ON_HEROKU:
-        yui_base = Yui_Base()
-        await message.reply(f"`Restarting {Config.CHAT_BOT_NAME}, Please wait...!`")
-        await yui_base.restart_yui()
-    else:
-        await message.reply("**This command is available only for Heroku users**")
