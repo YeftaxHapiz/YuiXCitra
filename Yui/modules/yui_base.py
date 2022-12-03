@@ -18,15 +18,7 @@ class Yui_Base():
     """
     Base of Yui Chat bot
     """
-
-    def __init__(self) -> None:
-        if Config.ON_HEROKU:
-            heroku_c = from_key(Config.HEROKU_API)
-            self.heroku_app = heroku_c.app(Config.HEROKU_APP_NAME)
-        else:
-            self.heroku_app = None
-            self.yui_sql_db = Yui_Database()
-
+    
     async def get_answer_from_yui(self, quiz, usr_id):
         ai_engine = await self.get_ai_engine()
         try:
