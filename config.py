@@ -3,7 +3,7 @@
 import os
 
 class Config(object):
-    APP_ID = int(os.environ.get("APP_ID, "7938961"))
+    APP_ID = int(os.environ.get("APP_ID", "7938961"))
     API_HASH = os.environ.get("API_HASH", "7de246ac831880656921b5a7a3b74274")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5781258361:AAGEWikwZNVFdsJnEPqPbHktccrratn4enU")
     OWNER_ID = int(os.environ.get("OWNER_ID", "1362925817"))
