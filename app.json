@@ -9,7 +9,7 @@
         "telegram chat bot"
     ],
     "website": "https://t.me/NexaBotsUpdates",
-    "repository": "https://github.com/Itz-fork/Yui",
+    "repository": "https://github.com/YeftaxHapiz/CitraXYui",
     "success_url": "https://t.me/NexaBotsUpdates",
     "env": {
         "APP_ID": {
